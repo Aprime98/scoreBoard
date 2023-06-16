@@ -1,13 +1,15 @@
-document.getElementById("a-score").innerText = "0";
-document.getElementById("b-score").textContent = 0;
-
 let scoreA = document.getElementById("a-score");
 let scoreB = document.getElementById("b-score");
 
+let scoreOfA = 0;
+let scoreOfB = 0;
+
 function incrementA() {
-  scoreA.textContent += 1;
+  scoreOfA += 1;
+  scoreA.textContent = scoreOfA;
 }
 
 function incrementB() {
-  scoreB.textContent += 1;
+  scoreOfB += 1;
+  scoreB.textContent = scoreOfB;
 }
