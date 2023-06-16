@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoSide Score.</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="univ.css">
+</head>
+
+<body>
+    <div class="img m-6 lg:m-16 rounded-lg p-4">
+        <div class="py-12">
+            <p class="text-center text-white font-extrabold text-4xl">GAME OF: <span class="block"> <span
+                        class="text-blue-500 underline underline-offset-4">Team A</span> vs <span
+                        class="text-blue-500 underline underline-offset-4">Team B</span></span></p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-6 mt-4 lg:mt-12">
+            <div onclick="incrementA()"
+                class="p-2 flex flex-col w-full lg:w-1/2 border-8 border-gray-500 bg-gray-200 rounded-md justify-center items-center">
+                <h1 class="uppercase font-extrabold text-4xl text-center p-2 lg:p-4">Team A</h1>
+                <button id="a-score" class="bg-blue-500 rounded-2xl font-extrabold w-4/5 text-9xl h-[180px]">2</button>
+            </div>
+            <div onclick="incrementB()"
+                class="p-2 flex flex-col w-full lg:w-1/2 border-8 border-gray-500 bg-gray-200 rounded-md justify-center items-center">
+                <h1 class="uppercase font-extrabold text-4xl text-center p-2 lg:p-4">Team B</h1>
+                <button id="b-score" class="bg-blue-500 rounded-2xl font-extrabold w-4/5 text-9xl h-[180px]">12</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.tsx"></script>
+</body>
+
+</html>
